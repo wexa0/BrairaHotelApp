@@ -6,11 +6,8 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'room_page_model.dart';
 export 'room_page_model.dart';
 
@@ -42,8 +39,8 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(50.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(50.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -61,8 +58,8 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(50.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(50.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -81,8 +78,8 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(60.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(60.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -101,8 +98,8 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
           curve: Curves.easeInOut,
           delay: 100.ms,
           duration: 600.ms,
-          begin: Offset(60.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(60.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -147,7 +144,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
               context.pop();
             },
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -157,13 +154,13 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
             mainAxisSize: MainAxisSize.max,
             children: [
               Expanded(
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   height: 500.0,
                   child: Stack(
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 0.0, 12.0, 0.0),
                         child: PageView(
                           controller: _model.pageViewController ??=
@@ -189,7 +186,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 6.0, 0.0, 6.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
@@ -214,9 +211,9 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 1.0),
+                        alignment: const AlignmentDirectional(-1.0, 1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               135.0, 0.0, 0.0, 21.0),
                           child: smooth_page_indicator.SmoothPageIndicator(
                             controller: _model.pageViewController ??=
@@ -226,11 +223,11 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                             onDotClicked: (i) async {
                               await _model.pageViewController!.animateToPage(
                                 i,
-                                duration: Duration(milliseconds: 500),
+                                duration: const Duration(milliseconds: 500),
                                 curve: Curves.ease,
                               );
                             },
-                            effect: smooth_page_indicator.ExpandingDotsEffect(
+                            effect: const smooth_page_indicator.ExpandingDotsEffect(
                               expansionFactor: 3.0,
                               spacing: 8.0,
                               radius: 9.0,
@@ -249,9 +246,9 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
               ),
               Expanded(
                 child: Align(
-                  alignment: AlignmentDirectional(1.2, 0.0),
+                  alignment: const AlignmentDirectional(1.2, 0.0),
                   child: Padding(
-                    padding: EdgeInsets.all(12.0),
+                    padding: const EdgeInsets.all(12.0),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -267,7 +264,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                     .labelSmall
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: Color(0xFF702EA7),
+                                      color: const Color(0xFF702EA7),
                                       fontSize: 20.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
@@ -286,7 +283,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: Color(0xFF57636C),
+                                      color: const Color(0xFF57636C),
                                       fontSize: 10.0,
                                       letterSpacing: 0.0,
                                     ),
@@ -297,7 +294,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: Color(0xFF57636C),
+                                      color: const Color(0xFF57636C),
                                       fontSize: 10.0,
                                       letterSpacing: 0.0,
                                     ),
@@ -311,7 +308,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                           ).animateOnPageLoad(
                               animationsMap['dividerOnPageLoadAnimation']!),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 4.0, 4.0, 0.0, 0.0),
                             child: Text(
                               'Description',
@@ -319,7 +316,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                   .labelSmall
                                   .override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF702EA7),
+                                    color: const Color(0xFF702EA7),
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -328,7 +325,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                 animationsMap['textOnPageLoadAnimation2']!),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 4.0, 4.0, 0.0, 17.0),
                             child: Text(
                               'Cozy single room with a comfortable single bed, perfect for solo travelers or individuals seeking a peaceful retreat',
@@ -337,7 +334,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF57636C),
+                                    color: const Color(0xFF57636C),
                                     fontSize: 12.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -349,7 +346,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 6.0, 0.0, 10.0),
                             child: Text(
                               'Services',
@@ -357,7 +354,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                   .labelSmall
                                   .override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF702EA7),
+                                    color: const Color(0xFF702EA7),
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -370,7 +367,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(3.3, 1.4),
+                                alignment: const AlignmentDirectional(3.3, 1.4),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment:
@@ -389,7 +386,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.7, -0.6),
+                                              const AlignmentDirectional(0.7, -0.6),
                                           child: Text(
                                             'swimming pool',
                                             style: FlutterFlowTheme.of(context)
@@ -428,9 +425,9 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(3.5, 1.4),
+                                alignment: const AlignmentDirectional(3.5, 1.4),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 8.0, 0.0, 4.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -481,7 +478,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                           ),
                                         ],
                                       ),
-                                    ].divide(SizedBox(width: 56.0)),
+                                    ].divide(const SizedBox(width: 56.0)),
                                   ),
                                 ),
                               ),
@@ -492,7 +489,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 10.0),
                             child: Text(
                               'Duration (# of nights)',
@@ -500,13 +497,13 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF57636C),
+                                    color: const Color(0xFF57636C),
                                     letterSpacing: 0.0,
                                   ),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -516,7 +513,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 84.0, 0.0),
                                       child: Text(
                                         'Check In',
@@ -532,7 +529,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(0.0, -0.1),
+                                          const AlignmentDirectional(0.0, -0.1),
                                       child: Container(
                                         width: 139.0,
                                         height: 32.0,
@@ -542,12 +539,12 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           border: Border.all(
-                                            color: Color(0xFFE5E7EB),
+                                            color: const Color(0xFFE5E7EB),
                                           ),
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(-0.8, -0.1),
+                                              const AlignmentDirectional(-0.8, -0.1),
                                           child: Text(
                                             'Start Date',
                                             textAlign: TextAlign.start,
@@ -567,12 +564,12 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                   ],
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-0.1, 0.0),
+                                  alignment: const AlignmentDirectional(-0.1, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 77.0, 0.0),
                                         child: Text(
                                           'Duration',
@@ -587,7 +584,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, -0.1),
+                                            const AlignmentDirectional(0.0, -0.1),
                                         child: Container(
                                           width: 141.0,
                                           height: 32.0,
@@ -597,11 +594,11 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
                                             border: Border.all(
-                                              color: Color(0xFFE5E7EB),
+                                              color: const Color(0xFFE5E7EB),
                                             ),
                                           ),
                                           child: Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 -0.8, -0.1),
                                             child: Text(
                                               'Duration (days)',
@@ -633,7 +630,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 9.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 9.0, 12.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -664,7 +661,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF57636C),
+                                    color: const Color(0xFF57636C),
                                     fontSize: 10.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -675,7 +672,7 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 6.0, 0.0, 5.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 6.0, 0.0, 5.0),
                 child: FFButtonWidget(
                   onPressed: () {
                     print('Button pressed ...');
@@ -684,17 +681,17 @@ class _RoomPageWidgetState extends State<RoomPageWidget>
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(141.0, 0.0, 140.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(141.0, 0.0, 140.0, 0.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: Color(0xFF702EA7),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: const Color(0xFF702EA7),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Readex Pro',
                           color: Colors.white,
                           letterSpacing: 0.0,
                         ),
                     elevation: 3.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 1.0,
                     ),

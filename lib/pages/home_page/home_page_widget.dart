@@ -3,10 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -39,8 +36,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 400.ms,
-          begin: Offset(3.0, 3.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(3.0, 3.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -59,8 +56,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.bounceOut,
           delay: 300.ms,
           duration: 300.ms,
-          begin: Offset(0.6, 0.6),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.6, 0.6),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -79,8 +76,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 350.ms,
           duration: 400.ms,
-          begin: Offset(0.0, 30.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 30.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -99,8 +96,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 400.ms,
           duration: 400.ms,
-          begin: Offset(0.0, 30.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 30.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -119,8 +116,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.bounceOut,
           delay: 300.ms,
           duration: 600.ms,
-          begin: Offset(0.6, 0.6),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.6, 0.6),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -160,12 +157,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   gradient: LinearGradient(
                     colors: [
                       FlutterFlowTheme.of(context).primary,
-                      Color(0xFFDEC5ED),
+                      const Color(0xFFDEC5ED),
                       FlutterFlowTheme.of(context).secondaryBackground
                     ],
-                    stops: [0.0, 0.5, 1.0],
-                    begin: AlignmentDirectional(-1.0, -1.0),
-                    end: AlignmentDirectional(1.0, 1.0),
+                    stops: const [0.0, 0.5, 1.0],
+                    begin: const AlignmentDirectional(-1.0, -1.0),
+                    end: const AlignmentDirectional(1.0, 1.0),
                   ),
                 ),
                 child: Container(
@@ -174,12 +171,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        Color(0xFF702EA7),
+                        const Color(0xFF702EA7),
                         FlutterFlowTheme.of(context).secondaryBackground
                       ],
-                      stops: [0.0, 1.0],
-                      begin: AlignmentDirectional(0.0, -1.0),
-                      end: AlignmentDirectional(0, 1.0),
+                      stops: const [0.0, 1.0],
+                      begin: const AlignmentDirectional(0.0, -1.0),
+                      end: const AlignmentDirectional(0, 1.0),
                     ),
                   ),
                   child: Column(
@@ -187,9 +184,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 100.0, 0.0, 0.0),
                           child: Container(
                             width: 160.0,
@@ -202,9 +199,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     .secondaryBackground,
                               ),
                             ),
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
                                 child: Image.network(
@@ -212,7 +209,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   width: 120.0,
                                   height: 120.0,
                                   fit: BoxFit.contain,
-                                  alignment: Alignment(0.0, 0.0),
+                                  alignment: const Alignment(0.0, 0.0),
                                 ),
                               ),
                             ),
@@ -222,7 +219,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                         child: Text(
                           'Welcome!',
                           style: FlutterFlowTheme.of(context)
@@ -235,7 +232,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             animationsMap['textOnPageLoadAnimation1']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             44.0, 8.0, 44.0, 0.0),
                         child: Text(
                           'Thanks for joining! Access or create your account below, and get started on your journey!',
@@ -255,16 +252,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   animationsMap['containerOnPageLoadAnimation1']!),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 44.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 44.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Expanded(
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 16.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 16.0),
                         child: FFButtonWidget(
                           onPressed: () {
                             print('Button pressed ...');
@@ -273,9 +270,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           options: FFButtonOptions(
                             width: 230.0,
                             height: 52.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
@@ -297,10 +294,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                   Expanded(
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 16.0),
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 16.0),
                         child: FFButtonWidget(
                           onPressed: () {
                             print('Button pressed ...');
@@ -309,11 +306,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           options: FFButtonOptions(
                             width: 230.0,
                             height: 52.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFF702EA7),
+                            color: const Color(0xFF702EA7),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -322,7 +319,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   letterSpacing: 0.0,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),

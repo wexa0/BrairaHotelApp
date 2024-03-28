@@ -1,10 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'my_reservation_model.dart';
 export 'my_reservation_model.dart';
 
@@ -52,11 +48,11 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
           'My Reservations',
           style: FlutterFlowTheme.of(context).headlineMedium.override(
                 fontFamily: 'Outfit',
-                color: Color(0xFF702EA7),
+                color: const Color(0xFF702EA7),
                 letterSpacing: 0.0,
               ),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -67,20 +63,20 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
             child: Column(
               children: [
                 Align(
-                  alignment: Alignment(0.0, 0),
+                  alignment: const Alignment(0.0, 0),
                   child: TabBar(
-                    labelColor: Color(0xFF702EA7),
-                    unselectedLabelColor: Color(0xFF666666),
+                    labelColor: const Color(0xFF702EA7),
+                    unselectedLabelColor: const Color(0xFF666666),
                     labelStyle:
                         FlutterFlowTheme.of(context).titleSmall.override(
                               fontFamily: 'Readex Pro',
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w500,
                             ),
-                    unselectedLabelStyle: TextStyle(),
-                    indicatorColor: Color(0xFF702EA7),
+                    unselectedLabelStyle: const TextStyle(),
+                    indicatorColor: const Color(0xFF702EA7),
                     indicatorWeight: 4.0,
-                    tabs: [
+                    tabs: const [
                       Tab(
                         text: 'Upcoming ',
                       ),
@@ -105,7 +101,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                           color: FlutterFlowTheme.of(context).primaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: ListView(
                             padding: EdgeInsets.zero,
@@ -114,14 +110,14 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   width: 220.0,
                                   height: 300.0,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0x33000000),
@@ -133,12 +129,12 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                     ],
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: Color(0xFFE5E7EB),
+                                      color: const Color(0xFFE5E7EB),
                                       width: 1.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -211,7 +207,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Single Room',
@@ -221,7 +217,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -248,10 +244,10 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                       ),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   1.0, 0.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 4.0, 0.0, 8.0),
                                                 child: RichText(
@@ -260,7 +256,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                           .textScaler,
                                                   text: TextSpan(
                                                     children: [
-                                                      TextSpan(
+                                                      const TextSpan(
                                                         text: '380',
                                                         style: TextStyle(
                                                           color:
@@ -276,7 +272,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                             .override(
                                                               fontFamily:
                                                                   'Outfit',
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0xFF606A85),
                                                               fontSize: 12.0,
                                                               letterSpacing:
@@ -293,7 +289,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF606A85),
+                                                              const Color(0xFF606A85),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -311,14 +307,14 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   width: 220.0,
                                   height: 300.0,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0x33000000),
@@ -330,12 +326,12 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                     ],
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: Color(0xFFE5E7EB),
+                                      color: const Color(0xFFE5E7EB),
                                       width: 1.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -408,7 +404,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Suite Room',
@@ -418,7 +414,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -446,7 +442,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 8.0),
                                               child: RichText(
                                                 textScaler:
@@ -454,7 +450,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                         .textScaler,
                                                 text: TextSpan(
                                                   children: [
-                                                    TextSpan(
+                                                    const TextSpan(
                                                       text: '800',
                                                       style: TextStyle(
                                                         color:
@@ -470,7 +466,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
@@ -485,7 +481,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            Color(0xFF606A85),
+                                                            const Color(0xFF606A85),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -501,7 +497,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 15.0)),
+                            ].divide(const SizedBox(height: 15.0)),
                           ),
                         ),
                       ),
@@ -512,7 +508,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                           color: FlutterFlowTheme.of(context).primaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: ListView(
                             padding: EdgeInsets.zero,
@@ -521,14 +517,14 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   width: 220.0,
                                   height: 300.0,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0x33000000),
@@ -540,12 +536,12 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                     ],
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: Color(0xFFE5E7EB),
+                                      color: const Color(0xFFE5E7EB),
                                       width: 1.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -623,7 +619,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Double Room',
@@ -633,7 +629,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -660,7 +656,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 8.0),
                                               child: RichText(
                                                 textScaler:
@@ -668,7 +664,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                         .textScaler,
                                                 text: TextSpan(
                                                   children: [
-                                                    TextSpan(
+                                                    const TextSpan(
                                                       text: '620',
                                                       style: TextStyle(
                                                         color:
@@ -684,7 +680,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
@@ -699,7 +695,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            Color(0xFF606A85),
+                                                            const Color(0xFF606A85),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -716,14 +712,14 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   width: 220.0,
                                   height: 300.0,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0x33000000),
@@ -735,12 +731,12 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                     ],
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: Color(0xFFE5E7EB),
+                                      color: const Color(0xFFE5E7EB),
                                       width: 1.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -763,20 +759,20 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                 opacity: 0.9,
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.96, -0.9),
                                                   child: Container(
                                                     width: 100.0,
                                                     height: 36.0,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0xFFF20808),
+                                                      color: const Color(0xFFF20808),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10.0),
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Text(
                                                         'Cancelled',
@@ -855,7 +851,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Suite Room',
@@ -865,7 +861,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF15161E),
+                                                              const Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -892,7 +888,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 8.0),
                                               child: RichText(
                                                 textScaler:
@@ -900,7 +896,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                         .textScaler,
                                                 text: TextSpan(
                                                   children: [
-                                                    TextSpan(
+                                                    const TextSpan(
                                                       text: '800',
                                                       style: TextStyle(
                                                         color:
@@ -916,7 +912,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
@@ -931,7 +927,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            Color(0xFF606A85),
+                                                            const Color(0xFF606A85),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -947,7 +943,7 @@ class _MyReservationWidgetState extends State<MyReservationWidget>
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 15.0)),
+                            ].divide(const SizedBox(height: 15.0)),
                           ),
                         ),
                       ),

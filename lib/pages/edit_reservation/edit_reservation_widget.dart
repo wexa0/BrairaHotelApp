@@ -4,8 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'edit_reservation_model.dart';
 export 'edit_reservation_model.dart';
 
@@ -41,7 +39,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Container(
         width: 300.0,
         height: 300.0,
@@ -53,7 +51,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Align(
-              alignment: AlignmentDirectional(-1.0, -1.0),
+              alignment: const AlignmentDirectional(-1.0, -1.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -87,7 +85,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                 FlutterFlowDropDown<String>(
                   controller: _model.dropDownValueController ??=
                       FormFieldController<String>(null),
-                  options: ['Single Room', 'Double Room', 'Twin Room', 'Suite'],
+                  options: const ['Single Room', 'Double Room', 'Twin Room', 'Suite'],
                   onChanged: (val) =>
                       setState(() => _model.dropDownValue = val),
                   width: 87.0,
@@ -108,7 +106,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                   borderColor: FlutterFlowTheme.of(context).alternate,
                   borderWidth: 2.0,
                   borderRadius: 8.0,
-                  margin: EdgeInsetsDirectional.fromSTEB(16.0, 1.0, 16.0, 1.0),
+                  margin: const EdgeInsetsDirectional.fromSTEB(16.0, 1.0, 16.0, 1.0),
                   hidesUnderline: true,
                   isOverButton: true,
                   isSearchable: false,
@@ -142,7 +140,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                   color: FlutterFlowTheme.of(context).accent4,
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -151,7 +149,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 84.0, 0.0),
                             child: Text(
                               ' Check In',
@@ -166,7 +164,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, -0.1),
+                            alignment: const AlignmentDirectional(0.0, -0.1),
                             child: Container(
                               width: 130.0,
                               height: 30.0,
@@ -175,11 +173,11 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                                     .secondaryBackground,
                                 borderRadius: BorderRadius.circular(8.0),
                                 border: Border.all(
-                                  color: Color(0xFFE5E7EB),
+                                  color: const Color(0xFFE5E7EB),
                                 ),
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(-0.8, -0.1),
+                                alignment: const AlignmentDirectional(-0.8, -0.1),
                                 child: Text(
                                   'Start Date',
                                   textAlign: TextAlign.start,
@@ -198,9 +196,9 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                         ],
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.5, 0.0),
+                        alignment: const AlignmentDirectional(-1.5, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 13.0, 0.0, 0.0),
                           child: Icon(
                             Icons.arrow_right_alt,
@@ -210,12 +208,12 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.1, 0.0),
+                        alignment: const AlignmentDirectional(-0.1, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 77.0, 0.0),
                               child: Text(
                                 'Check out',
@@ -229,7 +227,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, -0.1),
+                              alignment: const AlignmentDirectional(0.0, -0.1),
                               child: Container(
                                 width: 130.0,
                                 height: 30.0,
@@ -238,11 +236,11 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                                       .secondaryBackground,
                                   borderRadius: BorderRadius.circular(8.0),
                                   border: Border.all(
-                                    color: Color(0xFFE5E7EB),
+                                    color: const Color(0xFFE5E7EB),
                                   ),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(-0.8, -0.1),
+                                  alignment: const AlignmentDirectional(-0.8, -0.1),
                                   child: Text(
                                     'End Date',
                                     textAlign: TextAlign.start,
@@ -272,7 +270,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
               color: FlutterFlowTheme.of(context).accent4,
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -285,10 +283,10 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFF8D8B8B),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFF8D8B8B),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Readex Pro',
@@ -296,7 +294,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                                 letterSpacing: 0.0,
                               ),
                       elevation: 3.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),
@@ -312,10 +310,10 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                       width: 100.0,
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFF702EA7),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFF702EA7),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Readex Pro',
@@ -323,7 +321,7 @@ class _EditReservationWidgetState extends State<EditReservationWidget> {
                                 letterSpacing: 0.0,
                               ),
                       elevation: 3.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),
