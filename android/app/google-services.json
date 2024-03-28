@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "162287311429",
+    "firebase_url": "https://brairahotel-default-rtdb.firebaseio.com",
+    "project_id": "brairahotel",
+    "storage_bucket": "brairahotel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162287311429:android:beaa9a609f220b30ea612c",
+        "android_client_info": {
+          "package_name": "com.example.firstly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWR2q1wT-WZdr10YqO7c2fhkvRk1wrYp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162287311429:android:40ac53134e68f308ea612c",
+        "android_client_info": {
+          "package_name": "com.mycompany.braira"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWR2q1wT-WZdr10YqO7c2fhkvRk1wrYp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162287311429:android:34fc3488ba879058ea612c",
+        "android_client_info": {
+          "package_name": "com.mycompany.brairahotelapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWR2q1wT-WZdr10YqO7c2fhkvRk1wrYp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
